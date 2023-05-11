@@ -1,0 +1,10 @@
+.number-button{
+  -fx-font-size: 15px;
+  -fx-font-weight: bold;
+}
+
+.anchorpane{
+  -fx-background-color: black;
+
+}
+

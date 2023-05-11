@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorpane" stylesheets="@../Styles/ancorpane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.AddEnrollmentController">
+   <children>
+      <Button fx:id="addButton" layoutX="68.0" layoutY="342.0" mnemonicParsing="false" onAction="#addButtonHanlder" text="Add" />
+      <Button fx:id="clearAllButton" layoutX="191.0" layoutY="342.0" mnemonicParsing="false" onAction="#clearAllButtonHandler" text="Clear All" />
+      <Button fx:id="returnToMainButton" layoutX="337.0" layoutY="342.0" mnemonicParsing="false" onAction="#returnToMainButtonHandler" text="Return To Main" />
+      <Label layoutX="73.0" layoutY="103.0" text="Student ID">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0" startY="0.2132701421800948">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18421052396297455" green="0.7311403751373291" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2651006711409396">
+                     <color>
+                        <Color red="0.18421052396297455" green="0.7311403751373291" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.39323129808479296">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5973154362416108">
+                     <color>
+                        <Color red="1.0" green="0.14814814925193787" blue="0.9290123581886292" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7621951219512195">
+                     <color>
+                        <Color red="0.8019554018974304" green="0.019188595935702324" blue="0.8289473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.875" green="0.1666666716337204" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label layoutX="68.0" layoutY="162.0" prefHeight="18.0" prefWidth="108.0" text="Course ID">
+         <textFill>
+            <LinearGradient cycleMethod="REFLECT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.18421052396297455" green="0.7311403751373291" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.2348993288590604">
+                     <color>
+                        <Color red="0.18421052396297455" green="0.7311403751373291" blue="0.9473684430122375" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3825503355704698">
+                     <color>
+                        <Color red="1.0" green="0.14814814925193787" blue="0.9290123581886292" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5375266000982157">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.6883696185955148">
+                     <color>
+                        <Color red="0.8019554018974304" green="0.019188595935702324" blue="0.8289473652839661" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.8120805369127516">
+                     <color>
+                        <Color red="0.17000000178813934" green="0.5968571305274963" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.17000000178813934" green="0.5968571305274963" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font></Label>
+      <ComboBox fx:id="studentComboBox" layoutX="236.0" layoutY="99.0" prefHeight="25.0" prefWidth="211.0" />
+      <ComboBox fx:id="courseComboBox" layoutX="236.0" layoutY="159.0" prefHeight="25.0" prefWidth="211.0" />
+      <TitledPane alignment="CENTER" layoutY="-1.0" prefHeight="25.0" prefWidth="600.0" text="COURSE ENROLLMENTS">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8500000238418579" green="0.25" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.1676829268292683">
+                     <color>
+                        <Color red="0.8500000238418579" green="0.25" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.3724832214765101">
+                     <color>
+                        <Color red="0.26851850748062134" green="0.7805555462837219" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7248322147651006">
+                     <color>
+                        <Color red="0.9736841917037964" green="0.040570177137851715" blue="0.9114766120910645" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.9736841917037964" green="0.040570177137851715" blue="0.9114766120910645" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Eras Bold ITC" size="13.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>

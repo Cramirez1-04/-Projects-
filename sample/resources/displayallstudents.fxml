@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="anchorpane" stylesheets="@../Styles/ancorpane.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.DisplayAllStudentsController">
+   <children>
+      <Button fx:id="returnToMainButton" layoutX="274.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#returnToMainButtonClick" style="-fx-border-color: white;" styleClass="anchorpane" stylesheets="@../Styles/ancorpane.css" text="Return To Main">
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="0.95260663507109">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.013888888992369175" green="0.605555534362793" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.28161319364871495">
+                     <color>
+                        <Color red="0.37962964177131653" green="0.855246901512146" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4628007857259781">
+                     <color>
+                        <Color red="0.9953703880310059" green="0.9989197254180908" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.5838926174496644">
+                     <color>
+                        <Color red="0.6496731042861938" green="0.04909843951463699" blue="0.8157894611358643" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.7059256834179081">
+                     <color>
+                        <Color red="1.0" green="0.07999999821186066" blue="0.9386666417121887" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.07999999821186066" blue="0.9386666417121887" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font name="Eras Bold ITC" size="14.0" />
+         </font></Button>
+      <TextArea fx:id="displayTextArea" layoutX="16.0" layoutY="57.0" prefHeight="259.0" prefWidth="554.0" />
+      <TitledPane alignment="CENTER" collapsible="false" prefHeight="19.0" prefWidth="600.0" text="DISPLAYING ALL STUDENTS">
+         <textFill>
+            <LinearGradient endX="0.990521327014218" endY="1.0" startY="0.23222748815165878">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.013888888992369175" green="0.605555534362793" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4878048780487805">
+                     <color>
+                        <Color red="1.0" green="0.07999999821186066" blue="0.9386666417121887" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4239766001701355" green="0.01461988314986229" blue="0.5263158082962036" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TitledPane>
+   </children>
+</AnchorPane>
